@@ -1,6 +1,6 @@
 'use strict'
 
-const { Box, Button, Container, CssBaseline } = MaterialUI
+const { Box, Button, Container, CssBaseline, TextField } = MaterialUI
 
 // instead should take average people per household
 
@@ -35,35 +35,43 @@ const Calculator = (props) => {
     setResult(result)
   }
 
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  })
+
   return (
     <Container>
       <CssBaseline />
-      <h1>California Housing Price Estimator</h1>
-      <div>
-        {Object.keys(initialInput).map((key) => {
-          return (
-            <div>
-              <label>{key}</label>
-              <input
-                key={key}
-                type="text"
+      <div style={{ textAlign: 'center' }}>
+        <h1>California Housing Price Estimator</h1>
+        <div>
+          {Object.keys(initialInput).map((key) => {
+            return (
+              <TextField
+                style={{ margin: 40 }}
                 name={key}
+                key={key}
+                label={key}
                 value={input[key]}
                 onChange={updateInput}
+                variant="outlined"
               />
-            </div>
-          )
-        })}
-      </div>
+            )
+          })}
+        </div>
 
-      <button
-        onClick={() => {
-          fetchEstimate()
-        }}
-      >
-        Estimate
-      </button>
-      <h1>{result}</h1>
+        <Button
+          variant="contained"
+          onClick={() => {
+            fetchEstimate()
+          }}
+        >
+          Estimate
+        </Button>
+
+        <h1>{result && formatter.format(result)}</h1>
+      </div>
     </Container>
   )
 }
