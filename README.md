@@ -13,4 +13,9 @@ This is the companion app for the [Slai Get Started](https://docs.slai.io/slai/)
 7. `./run.sh`
 8. Open http://localhost:4242
 
+## Explore
+Open up a jupyter notebook to explore the model.
+1. Run `./jupyter.sh`
+2. Open `Model Exploration.ipynb` within Jupyter.
+
 More info at [Slai Get Started](https://docs.slai.io/slai/)
