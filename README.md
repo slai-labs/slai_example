@@ -1,6 +1,7 @@
-# CA Housing Price Estimator
+![Housing Estimator Screenshot](https://github.com/slai-labs/slai_example/blob/main/static/screenshot.png?raw=true)                                
 
-TODO screenshot of the calculator
+## About
+This is the companion app for the [Slai Get Started](https://docs.slai.io/slai/) guide.
 
 ## Setup
 1. `git clone https://github.com/slai-labs/slai_example`
@@ -11,8 +12,5 @@ TODO screenshot of the calculator
 6. `export SLAI_APP_URL=[EMAIL/PROJECT_NAME/REVSION]`
 7. `./run.sh`
 8. Open http://localhost:4242
-
-The price estimator is for informational and entertainment purposes only, you should not construe any such 
-information or other material as legal, tax, investment, financial, or other advice.
 
 More info at [Slai Get Started](https://docs.slai.io/slai/)
