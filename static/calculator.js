@@ -19,6 +19,10 @@ const Calculator = (props) => {
   const [input, setInput] = React.useState(initialInput)
   const [result, setResult] = React.useState(null)
 
+  const updateInput = (e, e2, e3) => {
+    setInput({ ...input, [e.target.name]: e.target.value })
+  }
+
   const fetchEstimate = async () => {
     const response = await fetch('/slai', {
       method: 'POST',
@@ -35,14 +39,31 @@ const Calculator = (props) => {
     <Container>
       <CssBaseline />
       <h1>California Housing Price Estimator</h1>
-      <div
+      <div>
+        {Object.keys(initialInput).map((key) => {
+          return (
+            <div>
+              <label>{key}</label>
+              <input
+                key={key}
+                type="text"
+                name={key}
+                value={input[key]}
+                onChange={updateInput}
+              />
+            </div>
+          )
+        })}
+      </div>
+
+      <button
         onClick={() => {
           fetchEstimate()
         }}
       >
         Estimate
-        <h1>{result}</h1>
-      </div>
+      </button>
+      <h1>{result}</h1>
     </Container>
   )
 }
