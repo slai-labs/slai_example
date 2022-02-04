@@ -7,7 +7,7 @@ TODO screenshot of the calculator
 2. `pip install .`
 3. `export SLAI_CLIENT_ID=[YOUR_SLAI_ID_HERE]` ([Slai API admin](https://www.slai.io/settings/api-keys))
 4. `export SLAI_CLIENT_SECRET=[YOUR_KEY_HERE]`
-5. `export SLAI_APP_URL=[EMAIL/PROJECT_NAME/REVSION]
+5. `export SLAI_APP_URL=[EMAIL/PROJECT_NAME/REVSION]`
 6. `./run.sh`
 7. Open http://localhost:4242
 
