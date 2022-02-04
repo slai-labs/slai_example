@@ -12,7 +12,7 @@ const initialInput = {
   total_bedrooms: 1000,
   population: 5000,
   households: 3000,
-  median_income: 15,
+  median_income: 95000,
 }
 
 const Calculator = (props) => {
@@ -29,7 +29,11 @@ const Calculator = (props) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(input),
+      body: JSON.stringify({
+        ...input,
+        // model expects income as multiple of 10k
+        median_income: input.median_income / 10000,
+      }),
     })
     const result = (await response.json())[0]
     setResult(result)
