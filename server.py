@@ -12,7 +12,9 @@ slai.login(
     client_secret=os.environ["SLAI_CLIENT_SECRET"]
 )
 
-model = slai.model("rissem@gmail.com/getting-started-ca-housing/initial")
+# TODO Add your SLAI URL here. You can find it in your 
+SLAI_URL = "FILL_ME_IN"
+model = slai.model(f"{SLAI_URL}/initial")
 
 @app.route("/")
 def root():
