@@ -1,7 +1,7 @@
 ![Housing Estimator Screenshot](https://github.com/slai-labs/slai_example/blob/main/static/screenshot.png?raw=true)                                
 
 ## About
-This is the companion app for the [Slai Get Started](https://docs.slai.io/slai/) guide.
+This is the companion app for the [Slai Get Started](https://docs.slai.io/slai/) guide. Check out a working example at [https://slai-example-app.herokuapp.com/](https://slai-example-app.herokuapp.com/)
 
 ## Setup
 1. `git clone https://github.com/slai-labs/slai_example`
