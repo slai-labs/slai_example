@@ -9,7 +9,7 @@ This is the companion app for the [Slai Get Started](https://docs.slai.io/slai/)
 3. `pip install .`
 4. `export SLAI_CLIENT_ID=[YOUR_SLAI_ID_HERE]` ([Slai API admin](https://www.slai.io/settings/api-keys))
 5. `export SLAI_CLIENT_SECRET=[YOUR_KEY_HERE]`
-6. Add your app URL to the `server.py` file.
+6. `export SLAI_PROJECT_URL=[<EMAIL>/<PROJECT>/<BRANCH>]`
 7. `./run.sh`
 8. Open http://localhost:4242
 
