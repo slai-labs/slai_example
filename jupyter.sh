@@ -6,7 +6,7 @@ if [ -z "$VIRTUAL_ENV" ]; then
     exit 1
 fi
 
-python -m ipykernel install --user --name slai-local-venv --display-name "Slai Example Virtualenv"
+python -m ipykernel install --name slai_example_venv --display-name "Slai Example Virtualenv" --prefix .venv
 
 # set variable dir to the directory of this script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
