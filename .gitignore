@@ -1,3 +1,4 @@
 .ipynb_checkpoints
 .jupyter/migrated
 __pycache__
+.venv
