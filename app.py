@@ -26,7 +26,7 @@ def favicon():
 def slai_proxy():
     data = {key: [request.json[key]] for key in request.json}
     df = pandas.DataFrame(data=data)
-    predictions = model(x1=df)["pred"]
+    predictions = model(x1=df)['pred']
     return json.dumps(predictions.tolist())
 
 # For developer sanity. So changes to calculator.js do not require a hard refresh
