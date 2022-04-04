@@ -1,0 +1,20 @@
+body {
+  color: #a1a1a3;
+}
+
+#notebook-container {
+  width: 100%;
+  padding: 0;
+}
+
+div#notebook {
+  padding: 0;
+}
+
+div.end_space {
+  display: none;
+}
+
+div {
+  background-color: #17181a !important;
+}
