@@ -7,11 +7,13 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-slai = "^0.1.62"
 pandas = "^1.4.0"
 jupyterlab = "^3.2.8"
 Flask = "^1.1.4"
 gunicorn = "^20.1.0"
+slai = {path = "../slai_sdk"}
+jupyterlab-darkside-ui = "^0.2.3"
+jupyterthemes = "^0.20.0"
 
 [tool.poetry.dev-dependencies]
 
